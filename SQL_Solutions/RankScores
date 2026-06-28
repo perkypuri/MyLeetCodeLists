@@ -1,0 +1,11 @@
+178. Rank Scores
+
+
+select score,
+       dense_rank() over(order by score desc)as 'rank'
+from Scores;
+
+keywords:
+ORDER BY score DESC : sorts scores from highest to lowest
+DENSE_RANK(): assigns rank to each row
+OVER(): tells SQL to apply ranking on the result set
