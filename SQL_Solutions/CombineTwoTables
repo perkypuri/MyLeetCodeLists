@@ -1,0 +1,13 @@
+175. Combine Two Tables
+
+
+select firstName ,lastName,city,state
+from Person 
+LEFT JOIN Address 
+on
+Address.personId=Person.personId;
+
+Left Join:
+A LEFT JOIN is used to combine two tables and return all rows from the left table,
+along with matching rows from the right table. If there is no match,
+the result shows NULL for right table columns.
